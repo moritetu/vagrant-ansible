@@ -1,0 +1,4 @@
+- hosts: web
+  become: yes
+  tasks:
+    - yum: name=httpd state=present
